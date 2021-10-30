@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/blocks.css">
+    <link rel="stylesheet" href="/css/responsive.css">s
+    <title>Dashboard View</title>
+</head>
+<body>
+    <img class="side-bar__control side-bar__control--reverse" src="/img/sideControl.svg" alt="sideControl.svg" onclick="controlSideBar()">
+    <div id="side-bar" class="side-bar">
+        <div class="logo">
+            <h4 class="logo__icon">OB</h4>
+            <h4 class="logo__text">OnlineBeratung</h4>
+        </div>
+        <div class="user-card">
+            <img class="user-card__profile-pic" src="/img/profile.jpg" alt="profile.jpg">
+            <div class="description">
+                <p class="user-card__user-name">Pablo Molina</p>
+                <p class="user-card__user-type">Premium user</p>
+            </div>
+        </div>
+        <nav class="nav">
+            <h5 class="nav__tittle">Main Menu</h5>
+            <div class="nav__links">
+                <a class="nav__link" href="#">
+                    <div class="nav__link-symbol">.</div>
+                    Statistics
+                    <img class="nav__link-arrow" src="/img/arrow.svg" alt="arrow.svg">
+                </a>
+                <a class="nav__link nav__link--active" href="#">
+                    <div class="nav__link-symbol">.</div>
+                    Articles
+                    <img class="nav__link-arrow" src="/img/arrow.svg" alt="arrow.svg">
+                </a>
+                <a class="nav__link" href="#">
+                    <div class="nav__link-symbol">.</div>
+                    Forms
+                    <img class="nav__link-arrow" src="/img/arrow.svg" alt="arrow.svg">
+                </a>
+                <a class="nav__link" href="#">
+                    <div class="nav__link-symbol">.</div>
+                    People
+                    <img class="nav__link-arrow" src="/img/arrow.svg" alt="arrow.svg">
+                </a>
+            </div>
+        </nav>
+        <img class="side-bar__control" src="/img/sideControl.svg" alt="sideControl.svg" onclick="controlSideBar()">
+    </div>
+    <div id="content" class="content">
+        <header class="header">
+            <input type="text" class="header__search-input" placeholder="Search Here">
+            <img class="header__bell" src="/img/bell.svg" alt="bell.svg">
+            <img class="header__mail" src="/img/mail.svg" alt="mail.svg">
+            <div class="user-options" onclick="controlUserMenu()">
+                <img class="user-options__profile-pic" src="/img/profile.jpg" alt="profile.jpg">
+                <img class="user-options__switch" src="/img/switch.svg" alt="switch.jpg">
+                <div id="user-menu" class="user-menu">
+                    <div class="user-menu__block">
+                        <a class="user-menu__item" href="#">Settings</a>
+                        <a class="user-menu__item" href="#">Profile</a>
+                        <a class="user-menu__item" href="#">Help</a>
+                        <a class="user-menu__item" href="#">Other Item</a>
+                    </div>
+                    <div class="user-menu__block">
+                        <a class="user-menu__item" href="#">LogOut</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="body">
+            <div class="body-header">
+                <h1 class="body-header__tittle">Article Statistics</h1>
+                <p class="body-header__nav-info">Settings | Analytics |  Watchlist</p>
+            </div>
+            <div class="body-options">
+                <div class="left-options">
+                    <div class="date-input">
+                        <img class="left__icon" src="/img/left.svg" alt="/img/left.svg">
+                        <div class="select select--bordered">
+                            <p class="select__text">03/02/2019 - 20/08/2019</p>
+                            <img class="select__icon" src="/img/down.svg" alt="/img/down.svg">
+                        </div> 
+                        <img class="right__icon" src="/img/right.svg" alt="/img/right.svg">
+                    </div>
+                    <div class="select">
+                        <p class="select__text">All Day</p>
+                        <img class="select__icon" src="/img/down.svg" alt="/img/down.svg">
+                    </div> 
+                    <a class="body-options__link" href="#">Advanced Options</a>
+                    <button class="body-options__button">new</button>
+                </div>
+                <div class="right-options">
+                    <div class="select">
+                        <p class="select__text">Export</p>
+                        <img class="select__icon" src="/img/down.svg" alt="/img/down.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="body-container">
+                <div class="block-1 block--center-x">
+                    <div class="stats">
+                        <div class="stats-desc">
+                            <h4 class="stats__num stats__num--green">32,451</h4>
+                            <h5 class="stats__type">Visits</h5>
+                            <h6 class="stats__resume">+14,00(+0,50%)</h6>
+                        </div>
+                        <img class="stats__img" src="/img/stat1.png" alt="stat1.png">
+                    </div>
+                    <div class="stats">
+                        <div class="stats-desc">
+                            <h4 class="stats__num stats__num--orange">7,688</h4>
+                            <h5 class="stats__type">Visits</h5>
+                            <h6 class="stats__resume">+57,62(+0,76%)</h6>
+                        </div>
+                        <img class="stats__img" src="/img/stat2.png" alt="stat2.png">
+                    </div>
+                    <table class="data-table">
+                        <tbody>
+                          <tr>
+                            <td class="data-table__tittle">Author:</td>
+                            <td class="data-table__text">Pablo Molina</td>
+                          </tr>
+                          <tr>
+                            <td class="data-table__tittle">Published on:</td>
+                            <td class="data-table__text">04/08/2020</td>
+                          </tr>
+                          <tr>
+                            <td class="data-table__tittle">Categories:</td>
+                            <td class="data-table__text">Design, Article, Styles</td>
+                          </tr>
+                          <tr>
+                            <td class="data-table__tittle">Tags</td>
+                            <td class="data-table__text">CSS, Design</td>
+                          </tr>
+                        </tbody>
+                    </table>    
+                    <div>
+                        <div class="block--center">
+                            <p class="data-table__tittle">URL:</p>
+                            <p id="linkToCopy" class="data-table__url">https://onlineberatung.com.ec/article/the-future-of-CSS-features-in-2020</p>
+                            <img class="data-table__share" src="/img/share.svg" alt="share.svg" onclick="copiar()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-container">
+                <h1 class="body-container__tittle-1">The future of CSS features in 2020</h1>
+                <p class="body-container__text body-container__text--italic">The “State of CSS 2019” report offers a glimpse into the future of frontend development — more specifically, the future of CSS. In this article, we’ll review the report, break down key features of CSS, and explore how they are being perceived in the CSS community. Then, we’ll use these insights to speculate about what’s to come in the world of CSS.</p>
+                <h2 class="body-container__tittle-2">What is the ‘State of CSS’?</h2>
+                <p class="body-container__text">First issued in 2019, the “State of CSS” is an annual survey that, similar to the “State of JavaScript,” records and beautifully illustrates the opinions of CSS users around the world. The data points cover CSS libraries and frameworks, features, units and selectors, and a whole lot more.</p>
+                <p class="body-container__text">In my opinion, the “State of CSS” report is the premier CSS-only developer survey, and I’m hopeful that it will be a staple of the frontend developer community for years to come.</p>
+                <p class="body-container__text">In this piece, we’ll examine the CSS features that will be in high demand in 2020 and discover what the approximately 11,000 survey respondents had to say about major CSS concepts such as typography, layouts, interactions, animations, shapes, and graphics.</p>
+                <h2 class="body-container__tittle-2">Flexbox</h2>
+                <div class="block-1 block--space">
+                    <div class="block-1-2">
+                        <p class="body-container__text">The Flexbox layout is a one-dimensional CSS module that is used to design interfaces and lay out boxes in a presentation within a container. You can flex the boxes in any direction, expand them to fill up unused space, or shrink them to avoid overflowing. Flexbox lets you make all kinds of alignment adjustments. Think of it as an extension of the grid.</p>
+                    </div>
+                    <div class="block-1-2">
+                        <p class="body-container__text">According to the survey, virtually all CSS users have heard of Flexbox. Even more impressive, 94.43 percent of respondents have actually used the layout in their projects.</p>
+                    </div>  
+                </div>            
+                <h2 class="body-container__tittle-2">Typography</h2>
+                <div class="block-1">
+                    <div class="block-2-3">
+                        <img class="body-container__img" src="/img/typo.png" alt="typo.png">
+                    </div>
+                    <p class="body-container__text">The Flexbox layout is a one-dimensional CSS module that is used to design interfaces and lay out boxes in a presentation within a container. You can flex the boxes in any direction, expand them to fill up unused space, or shrink them to avoid overflowing. Flexbox lets you make all kinds of alignment adjustments. Think of it as an extension of the grid.</p>
+                    <p class="body-container__text">According to the survey, virtually all CSS users have heard of Flexbox. Even more impressive, 94.43 percent of respondents have actually used the layout in their projects.</p>
+                </div>            
+            </div>
+        </section>
+        <footer class="footer">
+            <h6 id="copy-rigth" class="footer__copy-rigth"></h6>
+            <h6 class="footer__designed-by">Designed by: OnlineBeratung</h6>
+        </footer>
+    </div>
+    <script src="/js/navControl.js"></script>
+    <script src="/js/copyYear.js"></script>
+    <script src="/js/userMenu.js"></script>
+</body>
+</html>
